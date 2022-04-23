@@ -11,9 +11,10 @@ const Service = ({ repair }) => {
                 <Card.Text>
                     {description}
                 </Card.Text>
+                <h5>Visit Price: {price}</h5>
             </Card.Body>
             <Card.Footer style={{backgroundColor:'white'}} className='border-0 '>
-                <button className='btn btn-info'>Repair Now</button>
+                <button className='btn btn-info'>Hire Me</button>
             </Card.Footer>
         </Card>
     );
