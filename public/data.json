@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Refrigeretor Repair",
+        "price": "500",
+        "description": "I ",
+        "img": "https://i.ibb.co/fdmDd9P/refrigeretor.webp"
+    },
+    {
+        "id": 2,
+        "name": "Air Condition Repair",
+        "price": "500",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/FHqXhq6/ac.jpg"
+    },
+    {
+        "id": 3,
+        "name": "TV Repair",
+        "price": "200",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Tmm0r4B/tv.webp"
+    },
+    {
+        "id": 4,
+        "name": "Oven Repair",
+        "price": "200",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/p2DPvqX/oven.webp"
+    }
+    
+]
