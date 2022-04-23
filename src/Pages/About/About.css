@@ -1,0 +1,13 @@
+.about{
+    margin: 10px;
+}
+
+img {
+    float: left; 
+    margin: 5px;
+    width: 200px;
+}
+.square p {
+    text-align: justify;
+    font-size: 25px;
+}
