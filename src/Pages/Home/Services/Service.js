@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = ({ repair }) => {
     const { name, img, description, price } = repair;
@@ -14,7 +15,7 @@ const Service = ({ repair }) => {
                 <h5>Visit Price: {price}</h5>
             </Card.Body>
             <Card.Footer style={{backgroundColor:'white'}} className='border-0 '>
-                <button className='btn btn-info'>Hire Me</button>
+            <Link to='/checkout' ><button className='btn btn-info'> Hire Me</button></Link>
             </Card.Footer>
         </Card>
     );
