@@ -11,7 +11,7 @@ const Checkout = () => {
         event.preventDefault()
     }
     return (
-        <div className="w-50 my-5">
+        <div className="container my-5">
             <Form className='w-75 mx-auto' onSubmit={handleFormSubmit}>
                 <Form.Group className="mb-3" >
                     <Form.Control type="text" placeholder="Your Name" required/>
@@ -34,7 +34,7 @@ const Checkout = () => {
                     <InputGroup.Text>Write Your Problem</InputGroup.Text>
                     <FormControl as="textarea" aria-label="With textarea" />
                 </InputGroup>
-                <Button onClick={handleShow} variant="primary" type="submit">
+                <Button className='btn w-50' onClick={handleShow} variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>

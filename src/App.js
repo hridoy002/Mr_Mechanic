@@ -10,23 +10,25 @@ import Login from './Pages/Login/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Registration from './Pages/Login/Registration/Registration';
 import Checkout from './Pages/Home/Services/Checkout/Checkout';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 function App() {
   return (
     <div className="App">
-        <Header/>
-        <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/services' element={<Services/>}/>
-            <Route path='/checkout' element={<Checkout/>}/>
-            <Route path='/about' element={<About/>} />
-            <Route path='/blogs' element={<Blogs/>} />
-            <Route path='/login' element={<Login/>} />
-            <Route path='/register' element={<Registration/>} />
-            <Route path='*' element={<NotFound/>} />
-            
-        </Routes>
-        <Footer/>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/services' element={<Services />} />
+        {/* <Route path='/checkout' element={<Checkout/>} /> */}
+        <Route path='/about' element={<About />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/checkout' element={<RequireAuth><Checkout/></RequireAuth>} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Registration />} />
+        <Route path='*' element={<NotFound />} />
+
+      </Routes>
+      <Footer />
     </div>
   );
 }
