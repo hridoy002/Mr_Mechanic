@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth'
 import auth from '../../../firebase.init';
 import Social from '../Social/Social';
 
 const Registration = () => {
+    const navigate = useNavigate();
     // create user hook 
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
-
+    ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
 
     // handle form submit 
     const handleRegisterSubmit = event => {
@@ -26,6 +26,12 @@ const Registration = () => {
     if (error) {
         errorMessage = <p className='text-danger' style={{textAlign:'left'}}>Error: {error.message}</p>
     }
+
+    if(user){
+        navigate('/')
+    }
+      // checkbox state 
+      const [agree,setAgree] = useState(false);
     return (
         <div className='container my-5 w-50'>
             <Form onSubmit={handleRegisterSubmit} className='w-75 mx-auto'>
@@ -43,7 +49,7 @@ const Registration = () => {
                 {errorMessage}
                  
                 <div style={{textAlign:'left',}}>
-                    <input type="checkbox" name="checkbox" id="" /> <label htmlFor="checkbox">Accept Terms and Privacy</label>
+                    <input onClick={() => } type="checkbox" name="checkbox" id="" /> <label htmlFor="checkbox">Accept Terms and Privacy</label>
                 </div>
                 
                 <Button className='w-50 my-3 btn-info text-light' variant="primary" type="submit">

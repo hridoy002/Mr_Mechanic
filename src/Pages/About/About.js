@@ -13,6 +13,10 @@ const About = () => {
 
                 <p> <b>INTRODUCTION: </b>Hi! I am Mohammad Hridoy Ahmmed.I born in 20 April in Brahmanbaria.Brahmanbaria is also my origin.I live in now Mymensingh.
                 </p>
+                <p><b>EDUCATION:</b> I passed SSC with Science from Mukul Niketon High School,Mymensingh <br />
+                and passed HSC from Advanced Residential Model College,Mymensingh.
+                Complete graduation from Nothern University Bangladesh in Computer Science and Engineering.
+                </p>
             </div>
 
         </div>
