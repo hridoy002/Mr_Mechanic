@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth'
 import auth from '../../../firebase.init';
 import Social from '../Social/Social';
+import './Registration.css'
 
 const Registration = () => {
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ const Registration = () => {
     }
     let errorMessage;
     if (error) {
-        errorMessage = <p className='text-danger' style={{textAlign:'left'}}>Error: {error.message}</p>
+        errorMessage = <p className='text-danger' style={{textAlign:'left'}}>Error: {error?.message}</p>
     }
 
     if(user){
@@ -36,7 +37,7 @@ const Registration = () => {
     }
       
     return (
-        <div className='container my-5 w-50'>
+        <div className='container my-5 '>
             <Form onSubmit={handleRegisterSubmit} className='w-75 mx-auto'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="text" placeholder="Your Name" />
@@ -54,7 +55,7 @@ const Registration = () => {
                 <div style={{textAlign:'left',}}>
                     <input onClick={() => setAgree(!agree)} type="checkbox" name="checkbox" id="" /> <label className={agree? 'text-secondary' : 'text-danger'} htmlFor="checkbox">Accept Terms and Conditions</label>
                 </div>
-                
+                {errorMessage}
                 <Button disabled={!agree} className='w-50 my-3 btn-info text-light' variant="primary" type="submit">
                     Register
                 </Button>

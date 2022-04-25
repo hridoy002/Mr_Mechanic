@@ -6,8 +6,8 @@ import './Career.css'
 
 const Career = () => {
     return (
-        <div className='container'>
-            <h2 className='career mt-5 mb-3'><span>Career Status</span> </h2>
+        <div className='career container'>
+            <h2 className='career-title mt-5 mb-3'><span>Career Status</span> </h2>
             <Row className='mb-5'>
                 <Col className='order-1 order-lg-0'  lg={6} sm={12}>
                     <h3 style={{textAlign:"left"}}>Professional Life</h3>
@@ -24,8 +24,8 @@ const Career = () => {
                 </Col>
             </Row>
             <Row className='mt-5'>
-                <Col lg={6} sm={12}>
-                    <img height='300px' style={{width:'450px'}} src={career1} alt="" />
+                <Col className='img2' lg={6} sm={12}>
+                    <img  src={career1} alt="" />
                 </Col>
                 <Col className='mt-4' lg={6} sm={12}>
                     <h4 style={{textAlign:"left"}}>Mr. Mechanic</h4>

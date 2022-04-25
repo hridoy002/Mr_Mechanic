@@ -24,14 +24,8 @@ const Header = () => {
                                     <CustomLink  className='pe-2' as={Link} to="/services">Services</CustomLink>
                                     <CustomLink className='pe-2' as={Link} to="/about">About</CustomLink>
                                     <CustomLink className='pe-2' as={Link} to="/blogs">Blogs</CustomLink>
-                                    {user? <button onClick={logout} className=' btn btn-light'>Log Out</button> :<CustomLink as={Link} to="/login">Login</CustomLink>}
-                                    {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                    </NavDropdown> */}
+                                    {user? <button onClick={logout} className=' btn btn-light text-info fs-6 fw-bold'>Log Out</button> :<CustomLink as={Link} to="/login">Login</CustomLink>}
+                                   
                                 </Nav>
                             </Navbar.Collapse>
                 </Container>

@@ -1,16 +1,19 @@
-.career span {
+.career-title span {
     background-color: orangered;
     display: inline-block;
     color: white;
     padding: 8px 30px;
     clip-path: polygon(100% 0, 93% 51%, 100% 100%, 0% 100%, 7% 50%, 0% 0%);
 }
-/* @media screen and (max-width:576px) {
-    /* .col-1{
-        order:2;
-    }
 
-    .col-2{
-        order: 0;
+.img2 img{
+    width: 500px;
+}
+@media screen and (max-width:576px) {
+    .career{
+        padding: 10px;
     }
-} */ 
+    .img2 img{
+        width: 350px;
+    }
+} 
