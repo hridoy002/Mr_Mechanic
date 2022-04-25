@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Details About Mr. Mechanic 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WEBSITE: [Mr. Mechanics](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## What is the purpose of this Website?
 
-In the project directory, you can run:
+* [Mr. Mechanic]() for Home applience repair servicing website. 
 
 ### `npm start`
 
