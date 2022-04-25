@@ -13,8 +13,8 @@ const Services = () => {
         , [])
     return (
         <div className='services'>
-            <h2 className='my-5'>Services</h2>
-            <CardGroup>
+            <h2 className='title my-5'><span>Services</span> </h2>
+            <CardGroup className='cardGroup'>
                 {repairs.map(repair => <Service key={repair.id} repair={repair} />)}
             </CardGroup>
         </div>

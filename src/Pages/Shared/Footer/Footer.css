@@ -1,9 +1,24 @@
 .footer{
     background-color: #002A30;
     width: 100%;
+    color:white;
 }
 
-.link{
+.Link LINK{
     text-decoration: none;
     color:white
+}
+
+@media screen and (max-width:'576px') {
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .co{
+        padding-top: 0px;
+        color:#2b0f0f
+    }
+
 }

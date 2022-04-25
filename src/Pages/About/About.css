@@ -1,14 +1,34 @@
 .about{
-    margin: 10px;
+    margin: 30px 50px;
+}
+
+.square{
+    margin: 50px 0;
 }
 
 .square img {
     float: left; 
     margin: 8px;
     width: 200px;
-    border: 5px solid rgb(194, 219, 229);
+    /* border: 5px solid rgb(194, 219, 229); */
 }
 .square p {
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .about{
+        margin: 30px 5px;
+    }
+    .square img {
+        float: left; 
+        margin: 5px;
+        width: 150px;
+        /* border: 5px solid rgb(194, 219, 229); */
+    }
+    .square p {
+        text-align: left;
+        font-size: 18px;
+    }
 }

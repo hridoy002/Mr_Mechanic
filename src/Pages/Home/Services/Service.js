@@ -9,13 +9,13 @@ const Service = ({ repair }) => {
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
-                <Card.Text>
-                    {description}
+                <Card.Text style={{textAlign:"justify"}} className='text-alignment-justify'>
+                    {description.slice(0,450)}
                 </Card.Text>
                 <h5>Visit Price: {price}</h5>
             </Card.Body>
             <Card.Footer style={{backgroundColor:'white'}} className='border-0 '>
-            <Link to='/checkout' ><button className='btn btn-info'> Hire Me</button></Link>
+            <Link to='/checkout' ><button className='btn btn-warning w-50 text-light'> Hire Me</button></Link>
             </Card.Footer>
         </Card>
     );
