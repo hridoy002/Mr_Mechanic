@@ -36,7 +36,7 @@ const Login = () => {
 
 
 
-    // password reset auth hook 
+    // password reset 
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(
         auth
     )

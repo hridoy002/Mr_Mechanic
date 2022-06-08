@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth'
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import auth from '../../../firebase.init';
 import Social from '../Social/Social';
 import './Registration.css'

@@ -24,5 +24,8 @@ WEBSITE: [Mr. Mechanics](https://mr-mechanic-e1b7e.web.app).
 
 * I use here css framework React bootstrap and bootstrap.
 * Using firebase for authentication. 
-* React router and toastify. 
+* React router and toastify.
+
+
+<!-- private to public -->
 
